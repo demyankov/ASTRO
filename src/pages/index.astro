@@ -1,0 +1,45 @@
+---
+import Layout from "layouts/Layout.astro";
+import {
+  Divider,
+  Navbar,
+  Hero,
+  Feature1,
+  Feature2,
+  Feature3,
+  Feature4,
+  Feature5,
+  Development,
+  ScrollUpButton,
+  About,
+  Faq,
+  Feedback,
+  CookieConsent,
+  Footer,
+} from "components";
+import "styles/Theme.css";
+import "styles/Diagonals.css";
+---
+
+<Layout title="Tailcast">
+  <ScrollUpButton client:load />
+  <Navbar client:load />
+  <Hero client:load />
+  <Feature1 client:load />
+  <Divider />
+  <Feature2 client:load />
+  <Divider />
+  <Feature3 client:load />
+  <Divider />
+  <Feature4 client:load />
+  <Divider />
+  <Feature5 client:load />
+  <Development client:load />
+  <About client:load />
+  <Divider />
+  <Faq client:load />
+  <Divider />
+  <Feedback client:load />
+  <Footer />
+  <CookieConsent client:only />
+</Layout>

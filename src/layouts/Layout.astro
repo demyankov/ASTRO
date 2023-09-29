@@ -1,0 +1,69 @@
+---
+import '@fontsource/inter';
+import '@fontsource/inter/500.css';
+import '@fontsource/inter/600.css';
+import '@fontsource/inter/700.css';
+import '@fontsource/inter/800.css';
+import '@fontsource/inter/900.css';
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width' />
+    <meta name='generator' content={Astro.generator} />
+    <meta
+      name='description'
+      content='Приложение для автоматизации управления компьютерными клубами. Вы увидите как рутинная работа становится легче с нами.'
+    />
+    <link rel='shortcut icon' href='/favicon.ico' />
+    <script src='../helpers/metriks.js'></script>
+    <title>
+      CLUBNET - Приложение для автоматизации управления компьютерными клубами
+    </title></head
+  >
+
+  <body>
+    <noscript
+      >Вам необходимо включить JavaScript, чтобы запустить это приложение.</noscript
+    >
+    <noscript>
+      <div>
+        <img
+          src='https://mc.yandex.ru/watch/94366777'
+          style='position:absolute; left:-9999px;'
+          alt=''
+        />
+      </div>
+    </noscript>
+    <noscript
+      >Вам необходимо включить JavaScript, чтобы запустить это приложение.</noscript
+    >
+    <noscript>
+      <div>
+        <img
+          src='https://mc.yandex.ru/watch/94366777'
+          style='position:absolute; left:-9999px;'
+          alt=''
+        />
+      </div>
+    </noscript>
+    <slot />
+    <style is:global>
+      html {
+        font-family: Inter;
+        background-color: #26272b;
+        overflow: inherit;
+        scroll-behavior: smooth;
+        scroll-padding-top: 40px;
+
+        @media screen and (min-width: 768px) {
+          scroll-padding-top: 70px;
+        }
+      }
+    </style>
+  </body>
+</html>

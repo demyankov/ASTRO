@@ -1,0 +1,76 @@
+/* Hero */
+
+.custom-shape-divider-bottom-1665343298 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.custom-shape-divider-bottom-1665343298 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 200px;
+}
+.hero-title-gradient {
+  background: -webkit-linear-gradient(white, #b4add1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Features Top */
+
+.custom-shape-divider-bottom-1665696614 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+.custom-shape-divider-bottom-1665696614 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 45px;
+  transform: rotateY(180deg);
+
+  @media screen and (min-width: 768px) {
+    height: 127px;
+  }
+}
+
+/* Features Bottom */
+
+.custom-shape-divider-top-1665696661 {
+  overflow: hidden;
+  line-height: 0;
+}
+.custom-shape-divider-top-1665696661 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 45px;
+  transform: rotateY(180deg);
+
+  @media screen and (min-width: 768px) {
+    height: 127px;
+  }
+}
+
+.custom-button {
+  height: 80px;
+}
+
+.custom-button svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.active svg {
+  transform: translateY(-15%) scale(1.3);
+  transition: transform 0.7s;
+}
+
+.active svg path {
+  fill: rgb(161 163 247);
+}
